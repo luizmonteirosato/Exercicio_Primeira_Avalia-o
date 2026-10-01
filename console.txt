@@ -1,0 +1,31 @@
+PS C:\Users\luizm> & 'C:\Program Files\Java\jre-1.8\bin\java.exe' '-cp' 'C:\Users\luizm\AppData\Local\Temp\vscodesws_03d66\jdt_ws\jdt.ls-java-project\bin' 'EstoqueApp' 
+>>> 1. CAPTURANDO EXCEÇÃO DE QUANTIDADE INVÁLIDA
+[ERRO TRATADO] Quantidade inválida para 'Teclado': não pode ser negativa.
+
+>>> 2. CADASTRANDO PRODUTOS VÁLIDOS
+Produtos cadastrados com sucesso!
+
+--- LISTA DE PRODUTOS CADASTRADOS ---
+ID [0] [Comum] Caderno | Preço: R$20,00 | Quantidade: 50 unid.
+ID [1] [Comum] Caneta | Preço: R$3,00 | Quantidade: 100 unid.
+ID [2] [Perecível] Leite | Preço: R$5,00 | Quantidade: 40 unid. | Vence em: 10 dias
+ID [3] [Perecível] Morango | Preço: R$10,00 | Quantidade: 20 unid. | Vence em: 2 dias
+-------------------------------------
+
+>>> 3. REALIZANDO VENDA BEM-SUCEDIDA
+Vendendo 10 Cadernos (ID 0)...
+[SUCESSO] Venda realizada. Estoque do Caderno atualizado.
+
+>>> 4. CAPTURANDO EXCEÇÃO DE PRODUTO INDISPONÍVEL (FALTA DE ESTOQUE)
+Tentando vender 200 Canetas (ID 1), mas só temos 100...
+[ERRO TRATADO] Estoque insuficiente de Caneta. Solicitado: 200 | Disponível: 100
+
+>>> 5. EXIBINDO ESTOQUE FINAL E VALOR TOTAL
+
+--- LISTA DE PRODUTOS CADASTRADOS ---
+ID [0] [Comum] Caderno | Preço: R$20,00 | Quantidade: 40 unid.
+ID [1] [Comum] Caneta | Preço: R$3,00 | Quantidade: 100 unid.
+ID [2] [Perecível] Leite | Preço: R$5,00 | Quantidade: 40 unid. | Vence em: 10 dias
+ID [3] [Perecível] Morango | Preço: R$10,00 | Quantidade: 20 unid. | Vence em: 2 dias
+-------------------------------------
+VALOR TOTAL DO ESTOQUE: R$1460.00
